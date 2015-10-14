@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linearlayout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+         >
+    </LinearLayout>
+     
+     <LinearLayout
+            android:id="@+id/linearlayout03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/saveP_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="保存图片" />
+
+            <Button
+                android:id="@+id/showP_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看图片" />
+        </LinearLayout>
+
+     <LinearLayout
+         android:id="@+id/linearlayout02"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/linearlayout03"
+         android:layout_alignParentLeft="true"
+         android:orientation="horizontal" >
+
+         <Button
+             android:id="@+id/drawtool_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="选择图形" />
+
+         <Button
+             android:id="@+id/eraser_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="橡皮/画笔" />
+
+         <Button
+             android:id="@+id/cleanAll_btn"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="清空" />
+     </LinearLayout>
+        
+</RelativeLayout>
